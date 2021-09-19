@@ -43,4 +43,10 @@ pip install --no-input ipykernel
 # pip install --no-input torchaudio pytictoc nltk tqdm pattern transformers wandb pyyaml word2number tensorboard
 # echo "done"
 
+# checkout git repos
+cd /home/ec2-user/SageMaker
+git clone https://github.com/statistikZH/statbot.git
+git clone https://github.com/brunnurs/valuenet.git
+git clone https://github.com/hack-with-admin-ch/aws-sagemaker-notebook-valuenet.git notebook
+
 EOF
