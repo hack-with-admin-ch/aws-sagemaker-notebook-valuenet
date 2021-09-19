@@ -2,6 +2,9 @@
 
 set -e
 
+# install mysql postgres dependencies
+yum -y install mysql-devel postgresql-devel
+
 # OVERVIEW
 # This script installs a custom, persistent installation of conda on the Notebook Instance's EBS volume, and ensures
 # that these custom environments are available as kernels in Jupyter.

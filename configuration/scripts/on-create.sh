@@ -2,9 +2,6 @@
 
 set -e
 
-# install mysql client
-yum -y install mysql-devel postgresql-devel
-
 # see https://github.com/aws-samples/amazon-sagemaker-notebook-instance-lifecycle-config-samples/tree/master/scripts/persistent-conda-ebs
 
 # OVERVIEW
