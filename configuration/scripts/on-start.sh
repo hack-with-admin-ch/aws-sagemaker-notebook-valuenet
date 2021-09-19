@@ -35,6 +35,9 @@ echo "Kernel installation done"
 # rm /home/ec2-user/.condarc
 EOF
 
+echo "write sagemaker-valuenet-environment to jupyter-env"
+aws secretsmanager get-secret-value --secret-id sagemaker-valuenet-environment | jq -r '.SecretString' >> /etc/profile.d/jupyter-env.sh
+
 echo "Restarting the Jupyter server.."
 # this does not work on Amazon Linux 2
 # restart jupyter-server
