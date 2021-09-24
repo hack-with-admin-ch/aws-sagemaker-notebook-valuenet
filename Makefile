@@ -6,7 +6,8 @@ MODELS_FOLDER=models
 
 .PHONY:build-image
 build-image:
-	cp -r $(VALUENET_PATH)/$(DATA_FOLDER) $(DATA_FOLDER) \
+	mkdir -p data \
+	&& cp -r $(VALUENET_PATH)/$(DATA_FOLDER) $(DATA_FOLDER) \
 	&& cp -r $(VALUENET_PATH)/$(MODELS_FOLDER) $(MODELS_FOLDER) \
 	&& docker build \
 		--no-cache \
