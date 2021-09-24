@@ -30,5 +30,5 @@ There are then 3 notebooks:
 
 ## Publish the docker image
 
-1. Run `make build-image` to build the image with your data
+1. Run `build-image <path-to-experiment-folder>` (eg. `../valuenet/experiments/train-02__20210921_101600`) to build the image with your data
 2. Run `./publish_image.sh latest <your-target-tag>` (eg. `1.0.0` or  `20210923_212235`)
